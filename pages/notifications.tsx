@@ -4,7 +4,7 @@ import { getSession } from "next-auth/react";
 import Header from "@/components/Header";
 import NotificationsFeed from "@/components/NotificationsFeed";
 
-export async function getServerProps(context: NextPageContext) {
+export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context)
 
   if (!session) {

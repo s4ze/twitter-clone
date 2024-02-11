@@ -30,11 +30,12 @@ export default async function handler(
       throw new Error('Invalid ID')
     }
 
-    let updatedFollowingIds = { ...(user.followingIds || []) }
+    let updatedFollowingIds = [...(user.followingIds || [])];
 
     if (req.method === 'POST') {
       updatedFollowingIds.push(userId)
 
+      // NOTIFICATION PART START
       try {
         await prisma.notification.create({
           data: {
@@ -54,6 +55,8 @@ export default async function handler(
       } catch (error) {
         console.log(error)
       }
+      // NOTIFICATION PART END
+
     }
 
     if (req.method === 'DELETE') {

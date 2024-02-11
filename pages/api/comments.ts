@@ -29,6 +29,7 @@ export default async function handler(
       }
     })
 
+    // NOTIFICATION PART START
     try {
       const post = await prisma.post.findUnique({
         where: {
@@ -56,6 +57,7 @@ export default async function handler(
     } catch (error) {
       console.log(error)
     }
+    // NOTIFICATION PART END
 
     return res.status(200).json(comment)
   } catch (error) {

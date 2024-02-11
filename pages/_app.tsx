@@ -11,16 +11,14 @@ import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <SessionProvider session={pageProps.session}>
-        <Toaster />
-        <EditModal />
-        <RegisterModal />
-        <LoginModal />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </SessionProvider>
-    </>
-  );
+    <SessionProvider session={pageProps.session}>
+      <Toaster />
+      <EditModal />
+      <RegisterModal />
+      <LoginModal />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </SessionProvider>
+  )
 }
