@@ -10,8 +10,17 @@ const serverAuth = async (
 ) => {
   const session = await getServerSession(req, res, authOptions)
 
-  if (!session?.user?.email) {
+  /*if (!session?.user?.email) {
     throw new Error('Not signed in')
+  }*/
+
+  if (!session) {
+    throw new Error('anvar, net sessii')
+    // throw new Error('anvar oshibka s v pole email')
+  } else if (!session.user) {
+    throw new Error('anvar, net usera')
+  } else if (!session.user.email) {
+    throw new Error('anvar, net emaila')
   }
 
   const currentUser = await prisma.user.findUnique({

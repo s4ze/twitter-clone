@@ -30,19 +30,16 @@ const LoginModal = () => {
       loginModal.onClose();
     } catch (error) {
       console.log(error);
+      toast.error('Something went wrong')
     } finally {
       setIsLoading(false);
     }
-  }, [loginModal])
+  }, [email, password, loginModal])
 
   const onToggle = useCallback(() => {
-    if (isLoading) {
-      return;
-    }
-
     loginModal.onClose();
     registerModal.onOpen();
-  }, [isLoading, registerModal, loginModal])
+  }, [registerModal, loginModal])
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
