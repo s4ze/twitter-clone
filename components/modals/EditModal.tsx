@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import toast from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import axios from "axios";
 
 import useCurrentUser from "@/hooks/useCurrentUser";
@@ -82,7 +82,7 @@ const EditModal = () => {
         disabled={isLoading}
       />
       <Input
-        placeholder="Userame"
+        placeholder="Username"
         onChange={(e) => setUsername(e.target.value)}
         value={username}
         disabled={isLoading}

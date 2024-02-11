@@ -4,7 +4,7 @@ import { useDropzone } from "react-dropzone"
 
 interface ImageUploadProps {
   onChange: (base64: string) => void;
-  label?: string;
+  label: string;
   value?: string;
   disabled?: boolean;
 }
@@ -63,7 +63,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
               src={base64}
               height="100"
               width="100"
-              alt="Upload image"
+              alt="Uploaded image"
             />
           </div>
         ) : (
