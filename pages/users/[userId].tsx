@@ -4,7 +4,7 @@ import { ClipLoader } from "react-spinners";
 import Header from "@/components/Header";
 import UserHero from "@/components/users/UserHero";
 import useUser from "@/hooks/useUser";
-import UserBio from "@/components/UserBio";
+import UserBio from "@/components/users/UserBio";
 import PostFeed from "@/components/posts/PostFeed";
 
 const UserView = () => {
