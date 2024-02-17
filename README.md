@@ -1,8 +1,8 @@
 Клон Twitter'а, созданный для обучения Next, React.
 
-<img src="https://github.com/s4ze/twitter-clone/assets/126989735/755a3c05-bcd6-4c21-a13d-4eebfb743335" height="640" width="360">
-<img src="https://github.com/s4ze/twitter-clone/assets/126989735/2726c05d-39b7-449e-b1b0-db31952278e6" height="640" width="360">
-<img src="https://github.com/s4ze/twitter-clone/assets/126989735/14dba0ba-9c31-4f92-8607-b5fa27a06c76" height="640" width="360">
+<img src="https://github.com/s4ze/twitter-clone/assets/126989735/755a3c05-bcd6-4c21-a13d-4eebfb743335" height="360" width="640">
+<img src="https://github.com/s4ze/twitter-clone/assets/126989735/2726c05d-39b7-449e-b1b0-db31952278e6" height="360" width="640">
+<img src="https://github.com/s4ze/twitter-clone/assets/126989735/14dba0ba-9c31-4f92-8607-b5fa27a06c76" height="360" width="640">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
